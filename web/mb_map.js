@@ -55,13 +55,12 @@ data_layers = {
 /// MAPBOX STUFF...
 
 // define access token
-// MARC CHANGE THIS.
-mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNzYXhvbiIsImEiOiJjaXNycTNjM3YwNG02MnlwaDNlaWdsZGI1In0.5kY5mHw2-M5BheNm5U_Ynw';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY3dpdGFzZWUiLCJhIjoiY2tkaHljOHNqMDB3dDJ3cGI2dWR2YmpuaSJ9.thA8fs03yFEs88QIdFs2Og';
 
 // create map
 const map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'mapbox://styles/jamessaxon/ckz7drqfu000o16r5cx7qq6dd', // map style URL from Mapbox Studio -- MARC CHANGE THIS
+  style: 'mapbox://styles/marcwitasee/cl01dk17i000j14ob81c1vt3m', // map style URL from Mapbox Studio
   zoom: 9.5,
   center: [-87.672, 41.839],
   minZoom: 5.01,
@@ -223,6 +222,7 @@ map.on('load', () => {
   dl_text = document.createElement('p');
 
   dl_text.id = "dl_ref";
+  // TODO: Update href with new web domain for hosting map
   dl_text.innerHTML = "Download <a href='/~jsaxon/us_map/uchicago_broadband_data.csv.gz'>&#x2B07</a>";
   dl_div.appendChild(dl_text);
   legend.appendChild(dl_div);
@@ -241,6 +241,7 @@ map.on('load', () => {
     value_header.innerHTML = "";
 
     const full_screen = document.createElement('a');
+    // TODO: Update href with new web domain for hosting map
     full_screen.href = "https://saxon.cdac.uchicago.edu/~jsaxon/us_map/";
     full_screen.target = "_blank";
     full_screen.innerHTML = "Full Screen &#x27A1;";
