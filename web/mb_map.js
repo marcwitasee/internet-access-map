@@ -60,7 +60,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY3dpdGFzZWUiLCJhIjoiY2tkaHljOHNqMDB3dDJ3c
 // create map
 const map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'mapbox://styles/marcwitasee/cl01dk17i000j14ob81c1vt3m', // map style URL from Mapbox Studio
+  style: 'mapbox://styles/marcwitasee/cl2utne3n001915nwzo505ass', // map style URL from Mapbox Studio
   zoom: 9.5,
   center: [-87.672, 41.839],
   minZoom: 5.01,
