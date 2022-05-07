@@ -1,4 +1,4 @@
-const colors = ['#440154', '#3A528B', '#20908C', '#5EC961', '#FDE724'];
+const colors = ['#800000', '#b81414', '#d13400', '#ffcd38', '#ffff33'];
 const ncolors = colors.length;
 
 class DataLayer {
